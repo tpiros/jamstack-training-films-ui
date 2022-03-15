@@ -59,7 +59,6 @@ export async function getStaticProps() {
   const filmsResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/films?pagination[page]=1&pagination[pageSize]=5`
   );
-  console.log(filmsResponse);
   return {
     props: {
       films: filmsResponse,

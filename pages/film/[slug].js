@@ -23,7 +23,6 @@ const Film = ({ film, jwt, plot, error }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('jwt', jwt);
     try {
       await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/reviews`, {
         method: 'POST',

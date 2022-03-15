@@ -26,7 +26,6 @@ const Profile = ({ avatar }) => {
         method: 'POST',
         body: formData,
       });
-      console.log(responseData);
       if (responseData.message === 'success') {
         router.reload('/profile');
       }
