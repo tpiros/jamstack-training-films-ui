@@ -28,7 +28,6 @@ const Nav = () => {
         }),
       }
     );
-    console.log(responseData);
     setToken(responseData);
   };
 
